@@ -1,11 +1,11 @@
-Spring Boot Project for: Synerbot Speech Transcript REST Service
+***** Spring Boot Project for: Synerbot Speech Transcript REST Service  *****
 
-**** Features:  *****
-Can generate transcript for video files
-Can generate transcript for audio files
+Features:
+- Can generate transcript for video files
+- Can generate transcript for audio files
 
 
-********** Video Transcript flow:  **********
+Video Transcript flow:
 
 Step1- Pass videofile as a request parameter to the url
        http://hostname:port/api/transcribe/video
@@ -42,10 +42,10 @@ And the transcript file get uploaded to the s3 storage bucket.
     /var/tmp/test.wav : path to the audio file where it is located.
 	
 
-********** Audio Transcript flow *********
-	    Follow step 2 from Video transcript process.
+Audio Transcript flow:
+- Follow step 2 from Video transcript process.
 
-***** Transcript.json file format:  *****
+Transcript.json file format:  
 
     [ {
       "alternatives" : {
