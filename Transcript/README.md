@@ -1,4 +1,4 @@
-***** Spring Boot Project for: Synerbot Speech Transcript REST Service  *****
+***** Synerbot Video Transcript REST Service  *****
 
 Features:
 - Can generate transcript for video files
@@ -81,3 +81,13 @@ Api dependency:
   - Google cloud Speech-To-Text Api
   - Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
   - Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
+
+
+To Run This Application Follow The Steps
+
+    git clone repository_url
+    cd path/to/Video-Transcript-Service
+    mvn clean install
+    run as spring boot application or 
+    cd target
+    java -jar  Video-Transcript-Service.jar
