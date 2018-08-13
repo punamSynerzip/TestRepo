@@ -1,12 +1,12 @@
-***** Synerbot Video Transcript REST Service  *****
------------------------------------------------------------------------------------------------------------------------------
+Synerbot Video Transcript REST Service
+--------------------------------------
 
-Features:
-- Can generate transcript for video files
-- Can generate transcript for audio files
+- Features:
+  Can generate transcript for video files
+  Can generate transcript for audio files
 
 
-Video Transcript flow:
+- Video Transcript flow:
 
 Step1- Pass videofile as a request parameter to the url
        http://hostname:port/api/transcribe/video
@@ -43,8 +43,8 @@ And the transcript file get uploaded to the s3 storage bucket.
     /var/tmp/test.wav : path to the audio file where it is located.
 	
 
-Audio Transcript flow:
-- Follow step 2 from Video transcript process.
+- Audio Transcript flow:
+Follow step 2 from Video transcript process.
 
 Transcript.json file format:  
 
@@ -77,19 +77,18 @@ Transcript.json file format:
     }, ......
     ]
 
-Api dependency:
-  - FFmpeg library
-  - Google cloud Speech-To-Text Api
-  - Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
-  - Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
+- Api dependency:
+    FFmpeg library
+    Google cloud Speech-To-Text Api
+    Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
+    Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
 
 
-To Run This Application Follow The Steps
-----------------------------------------
-
-    git clone repository_url
-    cd path/to/Video-Transcript-Service
-    mvn clean install
-    run as spring boot application or 
-    cd target
-    java -jar  Video-Transcript-Service.jar
+- To Run This Application Follow The Steps
+    
+      git clone repository_url
+      cd path/to/Video-Transcript-Service
+      mvn clean install
+      run as spring boot application or 
+      cd target
+       java -jar  Video-Transcript-Service.jar
