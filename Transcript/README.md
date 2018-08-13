@@ -82,7 +82,7 @@ Transcript.json file format:
     1. FFmpeg library
     2. Google cloud Speech-To-Text Api
     3. Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
-    4 Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
+    4. Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
 
 
 - To Run This Application Follow The Steps
