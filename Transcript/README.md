@@ -85,6 +85,7 @@ Api dependency:
 
 
 To Run This Application Follow The Steps
+----------------------------------------
 
     git clone repository_url
     cd path/to/Video-Transcript-Service
