@@ -1,4 +1,5 @@
 ***** Synerbot Video Transcript REST Service  *****
+-----------------------------------------------------------------------------------------------------------------------------
 
 Features:
 - Can generate transcript for video files
