@@ -10,8 +10,8 @@ Synerbot Video Transcript REST Service
 
 Step1- Pass videofile as a request parameter to the url  http://hostname:port/api/transcribe/video
 
-This will generate audio file using FFmpeg library and returns   
-response as string for audiofile.
+
+This will generate audio file using FFmpeg library and returns response as string for audiofile.
 	
     E.g. http://localhost:8080/api/transcribe/video?videofile=videos/test.mp4
 	
@@ -27,9 +27,9 @@ response as string for audiofile.
 
 Step2- Pass the audiofile as a request parameter to the url  http://hostname:port/api/transcribe/audio
 
-The transcript .json file get generated for the audio file with
-the help of Google cloud Speech-To-Text Api.
-And the transcript file get uploaded to the s3 storage bucket.
+
+The transcript .json file get generated for the audio file with the help of Google cloud Speech-To-Text Api. And the 
+transcript file get uploaded to the s3 storage bucket.
 
     E.g.
     http://localhost:8080/api/transcribe/audio?audiofile=/var/tmp/test.wav
