@@ -2,14 +2,14 @@ Synerbot Video Transcript REST Service
 --------------------------------------
 
 - Features:
-  Can generate transcript for video files
-  Can generate transcript for audio files
+  > Can generate transcript for video files
+  > Can generate transcript for audio files
 
 
 - Video Transcript flow:
 
-Step1- Pass videofile as a request parameter to the url
-       http://hostname:port/api/transcribe/video
+Step1- Pass videofile as a request parameter to the url  http://hostname:port/api/transcribe/video
+--------------------------------------------
 
 This will generate audio file using FFmpeg library and returns   
 response as string for audiofile.
@@ -25,9 +25,7 @@ response as string for audiofile.
 
 
 
-Step2- Pass the audiofile as a request parameter to the url
----------------------------
-http://hostname:port/api/transcribe/audio
+Step2- Pass the audiofile as a request parameter to the url  http://hostname:port/api/transcribe/audio
 --------------------------------------------
 The transcript .json file get generated for the audio file with
 the help of Google cloud Speech-To-Text Api.
@@ -81,10 +79,10 @@ Transcript.json file format:
     ]
 
 - Api dependency:
-    	FFmpeg library
-    	Google cloud Speech-To-Text Api
-    	Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
-    	Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
+    > FFmpeg library
+    > Google cloud Speech-To-Text Api
+    > Google cloud project private key (.json file): set as environment variable GOOGLE_APPLICATION_CREDENTIALS
+    > Aws s3 credentials to read files from s3 and/or to upload generated transcript files to s3 bucket.
 
 
 - To Run This Application Follow The Steps
@@ -94,4 +92,4 @@ Transcript.json file format:
       mvn clean install
       run as spring boot application or 
       cd target
-       java -jar  Video-Transcript-Service.jar
+      java -jar  Video-Transcript-Service.jar
